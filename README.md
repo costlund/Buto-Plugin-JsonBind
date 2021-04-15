@@ -1,24 +1,21 @@
 # Buto-Plugin-JsonBind
-
 Bind json to element.
 
-
-
-
-
-
-
-
-
+## Include
+Include script in head.
+```
+type: widget
+data:
+  plugin: json/bind
+  method: include
+```
 
 ## JSON
-
 ```
 type: p
 attribute:
   json-bind: _my_json_object.name
 ```
-
 Call bind method.
 ```
 PluginJsonBind.bind();
