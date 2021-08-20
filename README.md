@@ -1,5 +1,6 @@
 # Buto-Plugin-JsonBind
-Bind json to element.
+Bind json data to an element using element attributes.
+Bind Datatable data to a select.
 
 ## Include
 Include script in head.
@@ -10,20 +11,32 @@ data:
   method: include
 ```
 
-## JSON
+## Bind json data
+Set innerHTML in an element.
 ```
 type: p
 attribute:
   json-bind: _my_json_object.name
 ```
-Call bind method.
+Select item in a selectbox.
 ```
-PluginJsonBind.bind();
+type: select
+attribute:
+  json-bind: Data.city_id
 ```
 
-### Datatable
+### Bind Datatable data
 Bind select from datatable.
 ```
-var select = document.getElementById('_my_select_');
-PluginJsonBind.bind_datatable_to_select(select, select.getAttribute('ondemand-json-bind-datatable-to-select'), select.getAttribute('ondemand-json-bind-datatable-to-select-value'), select.getAttribute('ondemand-json-bind-datatable-to-select-option'), _my_json_object_.id);
+type: select
+attribute:
+  json-bind-datatable-to-select: table_city_list
+  json-bind-datatable-to-select-value: name
+  json-bind-datatable-to-select-option: id
+```
+
+## Call method
+Call bind method to set elements and select boxes.
+```
+PluginJsonBind.bind();
 ```
