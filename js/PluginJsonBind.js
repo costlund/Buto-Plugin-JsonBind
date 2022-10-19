@@ -62,6 +62,13 @@ function PluginJsonBind(){
         elements[i].setAttribute(elements[i].getAttribute('json-bind-attribute'), _value);
       }
     }
+    /**
+     * method
+     */
+    elements = document.querySelectorAll('[json-bind-method]');
+    for (var i = 0; i < elements.length; i++) {
+      eval(elements[i].getAttribute('json-bind-method')+"()");
+    }
   }
 }
 var PluginJsonBind = new PluginJsonBind();

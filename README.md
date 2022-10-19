@@ -35,7 +35,22 @@ attribute:
   json-bind-datatable-to-select-option: id
 ```
 
-## Call method
+## Bind method
+```
+-
+  type: span
+  attribute:
+    json-bind: Data.name
+    json-bind-method: handle_name
+-
+  type: script
+  innerHTML: |
+    function handle_name(){
+      console.log('Method handle_name is called when bind method is fired!');
+    }
+```
+
+## Call bind method
 Call bind method to set elements and select boxes.
 ```
 PluginJsonBind.bind();
