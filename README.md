@@ -45,8 +45,9 @@ attribute:
 -
   type: script
   innerHTML: |
-    function handle_name(){
-      console.log('Method handle_name is called when bind method is fired!');
+    function handle_name(e){
+      console.log('Method handle_name is called when bind method is fired! Param e is element object.');
+      console.log(e);
     }
 ```
 

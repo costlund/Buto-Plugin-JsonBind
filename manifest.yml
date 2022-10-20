@@ -1,5 +1,9 @@
-version: 1.1.0
+version: 1.2.0
 history:
+  1.2.0:
+    date: '2022-10-20'
+    title: 'Method'
+    description: 'Post the element in method.'
   1.1.0:
     date: '2022-10-19'
     title: 'Method'
