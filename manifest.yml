@@ -1,16 +1,20 @@
-version: 1.2.0
+version: 1.2.1
 history:
+  1.2.1:
+    date: '2023-04-14'
+    title: Versions
+    description: 'Versions update.'
   1.2.0:
     date: '2022-10-20'
-    title: 'Method'
+    title: Method
     description: 'Post the element in method.'
   1.1.0:
     date: '2022-10-19'
-    title: 'Method'
+    title: Method
     description: 'Add bind method.'
   1.0.1:
     date: '2021-04-16'
-    title: 'Readme'
+    title: Readme
     description: 'Readme improvement.'
   1.0.0:
     date: '2020-04-02'
@@ -19,7 +23,7 @@ history:
 plugin:
   -
     name: wf/embed
-    version: 1.1.0
+    version: 1.2.0
 sys:
   -
     name: mercury
