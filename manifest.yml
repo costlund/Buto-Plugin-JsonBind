@@ -1,5 +1,9 @@
-version: 1.2.2
+version: 1.2.3
 history:
+  1.2.3:
+    date: '2023-11-20'
+    title: Checkbox
+    description: 'Handle checkbox.'
   1.2.2:
     date: '2023-09-11'
     title: Versions

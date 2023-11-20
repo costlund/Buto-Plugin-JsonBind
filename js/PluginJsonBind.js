@@ -46,7 +46,11 @@ function PluginJsonBind(){
           /**
            * Input, Textarea
            */
-          elements[i].value = _value;
+          if(elements[i].type=='checkbox'){
+            elements[i].checked = _value;
+          }else{
+            elements[i].value = _value;
+          }
         }else if(elements[i].tagName=='SELECT'){
           /**
            * Select
