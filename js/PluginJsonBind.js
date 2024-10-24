@@ -2,6 +2,13 @@ function PluginJsonBind(){
   this.bind_datatable_to_select = function(e, datatable_id, json_value, json_option, json_default){
     e.options.length = 0;
     var data = $('#'+datatable_id).DataTable().rows().data();
+    /**
+     * Add empty option first.
+     */
+    $(e)[0].options.add( eval("new Option('', '')") )
+    /**
+     * 
+     */
     $.each( data, function( key, value ) {
       $(e)[0].options.add( eval("new Option(value."+json_value+", value."+json_option+")") )
     });

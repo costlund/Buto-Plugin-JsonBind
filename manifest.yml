@@ -1,5 +1,9 @@
-version: 1.2.3
+version: 1.2.4
 history:
+  1.2.4:
+    date: '2024-10-24'
+    title: Select
+    description: 'Add an empty value in selectbox.'
   1.2.3:
     date: '2023-11-20'
     title: Checkbox
