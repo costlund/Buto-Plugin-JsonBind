@@ -5,7 +5,7 @@ function PluginJsonBind(){
     /**
      * Add empty option first.
      */
-    $(e)[0].options.add( eval("new Option('', '')") )
+    $(e)[0].options.add( eval("new Option('-', '')") )
     /**
      * 
      */
